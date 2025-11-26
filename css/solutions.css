@@ -54,3 +54,29 @@ button.save-btn:hover {
   translate: 0px -2px;
   box-shadow: 0px 2px #100a5538;
 }
+
+div.progress-fill::after {
+  content: "65%";
+  color: #ffffff;
+  font-size: 10px;
+  position: absolute;
+  right: 5%;
+  top: -35%;
+}
+
+a.nav-item:first-child {
+  color: #3f82cf;
+  background-color: #3c5a79;
+}
+
+a.nav-item:hover {
+  color: #3f82cf;
+  background-color: #3c5a79;
+}
+
+div.quote-box p::before,
+div.quote-box p::after {
+  content: '"';
+  color: #9c92d48a;
+  font-size: 30px;
+}
