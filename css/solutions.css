@@ -4,18 +4,35 @@ div.stats-grid:first-child::before {
 }
 
 div.stats-grid:last-child {
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 div.stats-grid:last-child .stat-number {
-	color: #ffffff;
+  color: #ffffff;
 }
 
 div.stats-grid:last-child .stat-label {
-	color: #ffffff;
+  color: #ffffff;
 }
 
 div.stats-grid:hover {
-	translate: 0px -5px;
+  translate: 0px -5px;
   box-shadow: 0px 5px #00000025;
+}
+
+article.workout-plan:nth-child(3) {
+  background-color: #ffee0050;
+  border-left: 4px solid #ffa500;
+}
+
+div.exercise-item:first-child {
+  border-left: 4px solid #1aa732;
+}
+
+div.exercise-item:last-child {
+  border-left: 4px solid #1aa732;
+}
+
+div.exercise-item:nth-child(even)::before {
+  content: "⚡";
 }
