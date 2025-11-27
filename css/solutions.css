@@ -1,8 +1,11 @@
+/* 1. */
 div.stats-grid:first-child::before {
   content: "🔥";
+  display: block;
   font-size: 30px;
 }
 
+/* 2. */
 div.stats-grid:last-child {
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
@@ -12,6 +15,7 @@ div.stats-grid:last-child .stat-label {
   color: #ffffff;
 }
 
+/* 3. */
 div.stats-grid {
   transition: translate 0.5s, box-shadow 0.5s;
 }
@@ -21,20 +25,25 @@ div.stats-grid:hover {
   box-shadow: 0px 5px #00000025;
 }
 
+/* 4. */
 article.workout-plan:nth-child(3) {
-  background-color: #ffee0050;
-  border-left: 4px solid #ffa500;
+  border-left: 5px solid #ffa500;
+  background-color: #fff8ba;
 }
 
+/* 5. */
 div.exercise-item:first-child,
 div.exercise-item:last-child {
-  border-left: 4px solid #1aa732;
+  border-left-color: #1aa732;
+  background: #f0fff4;
 }
 
+/* 6. */
 div.exercise-item:nth-child(even)::before {
   content: "⚡";
 }
 
+/* 7 - 8. */
 div.goal-input-group input,
 div.goal-input-group select {
   transition: border 0.5s, box-shadow 0.5s;
@@ -46,6 +55,7 @@ div.goal-input-group select:focus {
   box-shadow: 0px 5px #00000025;
 }
 
+/* 9. */
 button.save-btn {
   transition: translate 0.3s, box-shadow 0.3s;
 }
@@ -55,15 +65,18 @@ button.save-btn:hover {
   box-shadow: 0px 2px #100a5538;
 }
 
+/* 10. */
 div.progress-fill::after {
   content: "65%";
-  color: #ffffff;
-  font-size: 10px;
   position: absolute;
+  color: #ffffff;
+  font-size: 12px;
   right: 5%;
-  top: -35%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
+/* 11 - 12. */
 a.nav-item:first-child {
   color: #3f82cf;
   background-color: #3c5a79;
@@ -74,6 +87,7 @@ a.nav-item:hover {
   background-color: #3c5a79;
 }
 
+/* 13. */
 div.quote-box p::before,
 div.quote-box p::after {
   content: '"';
